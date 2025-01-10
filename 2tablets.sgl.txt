@@ -1,0 +1,34 @@
+
+CREATE TABLE FirstTable (
+    ID INT PRIMARY KEY,  
+    Col2 INT,
+    Col3 INT,
+    Col4 INT,
+    Col5 INT
+);
+
+INSERT INTO FirstTable (ID, Col2, Col3, Col4, Col5)
+VALUES
+(1, 10, 100, 1000, 10000),
+(2, 20, 200, 2000, 20000),
+(3, 30, 300, 3000, 30000),
+(4, 40, 400, 4000, 40000);
+
+
+CREATE TABLE SecondTable (
+    ID INT PRIMARY KEY, 
+    Col2 NVARCHAR(50),  
+    Col3 NVARCHAR(50),  
+    Col4 NVARCHAR(50),  
+    Col5 NVARCHAR(50)  
+);
+
+INSERT INTO SecondTable (ID, Col2, Col3, Col4, Col5)
+VALUES
+(1, 'Text1', 'Text2', 'Text3', 'Text4'),
+(2, NULL, NULL, NULL, NULL), -- Пустая строка
+(3, NULL, NULL, NULL, NULL), -- Пустая строка
+(4, 'Text5', 'Text6', 'Text7', 'Text8'),
+(5, 'Text9', 'Text10', 'Text11', 'Text12'),
+(6, 'Text13', 'Text14', 'Text15', 'Text16'),
+(7, 'Text17', 'Text18', 'Text19', 'Text20');
