@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Створення папки
+echo "Creating a folder named 'my_folder'..."
+mkdir my_folder
+
+# Створення файлу та запис у нього тексту
+echo "Creating a file named 'my_file.txt' and writing text into it..."
+echo "This is a sample text file." > my_folder/my_file.txt
+
+# Читання файлу
+echo "Reading the content of 'my_file.txt'..."
+cat my_folder/my_file.txt
+
+# Редагування файлу через nano (вручну)
+echo "Opening 'my_file.txt' in nano for editing..."
+nano my_folder/my_file.txt
+
+# Видалення папки з усім вмістом
+echo "Deleting the folder 'my_folder' and its contents..."
+rm -r my_folder
+
+echo "All tasks completed!"
+ 
